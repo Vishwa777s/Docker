@@ -1,5 +1,5 @@
 FROM centos
-RUN yum -y update && apt-get -y upgrade
+RUN yum -y update && yum -y upgrade
 RUN yum -y install default-jdk wget
 RUN mkdir /usr/local/tomcat
 RUN wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.71/bin/apache-tomcat-9.0.71.tar.gz -O /tmp/tomcat.tar.gz
